@@ -1,5 +1,6 @@
-import "./header.css";
-import HeaderImage from "../../assets/header.jpg";
+import HeaderImage from '../../assets/header.jpg'
+import data from './data'
+import './header.css'
 
 const Header = () => {
   return (
@@ -8,16 +9,22 @@ const Header = () => {
         <div className="header__profile">
           <img src={HeaderImage} alt="Header Portait" />
         </div>
-        <h3>Amir Sohail</h3>
+        <h3>Hajia Bintu</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-          itaque dicta et odit. Quaerat atque modi, enim distinctio commodi
-          amet, porro, accusamus ut cupiditate nihil numquam dolor obcaecati
-          fugiat alias inventore
+        You are a click away from building your dream website or web app. Send me the details of your project for a modern, mobile responsive, highly performant website today!
         </p>
+        <div className="header__cta">
+          <a href="#contact" className='btn primary'>Let's Talk</a>
+          <a href="#portfolio" className='btn light'>My Work</a>
+        </div>
+        <div className="header__socials">
+          {
+            data.map(item => <a key={item.id} href={item.link} target="_blank" rel="noopener noreferrer">{item.icon}</a>)
+          }
+        </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
