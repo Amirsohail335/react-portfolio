@@ -33,12 +33,9 @@ const About = () => {
             .
           </p>
           <p>
-            Hi, my name is Hajia Bintu from Accra, Ghana. I'm a full-stack web
-            developer with a Bachelors degree in Computer Science. My top
-            priority is to get your business online the right way, giving you
-            industry-standard design and all the functionality you need to
-            operate smoothly online. Get in touch today with the details of your
-            project let's get started! Check out my resume below!
+            Hi, My  name is Amir Sohail from Delhi, India. I'm a full-stack web
+            developer worked on different full-stack projects and I have used different software tech and tools 
+            like Node JS , React , Express , Insomnia , HTML , CSS , JavaScript , Git , AWS -Fundamental
           </p>
           <a href={CV} download className="btn primary">
             Download CV <HiDownload />
