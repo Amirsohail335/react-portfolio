@@ -4,6 +4,7 @@ import data from './data'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './header.css'
+import Projects from './../portfolio/Projects';
 
 const Header = () => {
   useEffect(() => {
@@ -16,12 +17,15 @@ const Header = () => {
         <div className="header__profile" data-aos="fade-in">
           <img src={HeaderImage} alt="Header Portait" />
         </div>
-        <h3  data-aos="fade-up">Hajia Bintu</h3>
+        <h3  data-aos="fade-up">Amir Sohail</h3>
         <p  data-aos="fade-up">
-        You are a click away from building your dream website or web app. Send me the details of your project for a modern, mobile responsive, highly performant website today!
+        I’m passionate about programming, problem solving, learning new technologies and 
+        implement them so that I can expand my knowledge in software engineering. I love
+        to take challenges and making an organization successful and establish a successful
+        career for myself .
         </p>
         <div className="header__cta"  data-aos="fade-up">
-          <a href="#contact" className='btn primary'>Let's Talk</a>
+          <a href="#contact" className='btn primary'>Let's Connect</a>
           <a href="#portfolio" className='btn light'>My Work</a>
         </div>
         <div className="header__socials">
